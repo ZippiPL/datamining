@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import WordCloud
+from tqdm import tqdm
+import pandas as pd
+import csv
+with open("files/True.csv", 'r') as file:
+    csv_file = csv.DictReader(file)
+    for row in csv_file:
+        print(dict(row))
+from lab_2 import(
+    remove_stop_words,
+    steming,
+    allClearing,
+    bag_of_words
+    )
+
+
