@@ -1,0 +1,14 @@
+Zespół: Chela Laura, Duda Denis
+
+INTERPRETACJA najlepszego classifiera
+Najlepszym z klasifikatorów okazał się RandomForestClassifier(), którego accuracy(dokładność) wyniosła 0.76, czyli zaklasyfikował on poprawnie (zgodnie z klasą: negativ, neutral, positiv) 76% przypadków poddanych predykcji.
+
+              precision    recall  f1-score   support
+    negative       0.80      0.92      0.85      2676
+     neutral       0.60      0.42      0.49       859
+    positive       0.71      0.57      0.64       665
+
+- Precision (precyzja) w przypadku klasy "negative" wyniosła 0.80, czyli 80% przypadków zostało poprwanie zaklasyfikowane jako "negative".
+- Recall w przypadku klasy "negative" wyniosła 0.92, co oznacza, że 92% spośród wszystkich poprawnych klasyfikacji jako "negative" zostało prawidłowo przewidzianych (bardzo niewiele wyników pozytywnych jest błędnie klasyfikowanych jako inne klasy).
+- F1-score F-score jest metryką wydajności modelu uczenia maszynowego, która daje równą wagę zarówno Precision, jak i Recall do pomiaru jego wydajności pod względem dokładności, co czyni ją alternatywą dla metryki Accuracy i w przypadku klasy "negative" wynosi 0.85.
+- Support - liczba przypadków użytych do testowania
